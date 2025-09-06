@@ -131,6 +131,17 @@ EduConnect.AI | Hackathons at Cornell University | Feb 2025-May 2025
 • Designed a matching algorithm leveraging OpenAI API for prompt classification and SerpAPI 
   for retrieval-augmented generation (RAG) to enhance nonprofit search and recommendation.
 
+Camlmon Showdown | Cornell University CS 3110 Final Project | Fall 2024
+• Developed a Pokemon Showdown-inspired battle simulator in OCaml, demonstrating mastery of 
+  functional programming paradigms including pattern matching, higher-order functions, and 
+  immutable data structures for game state management.
+• Implemented modular architecture with separate type, item, and Camlmon modules, utilizing 
+  CSV data processing and ANSITerminal for enhanced terminal UI with health bars and styling.
+• Designed comprehensive battle system with type effectiveness calculations, item management, 
+  multiplayer functionality, and robust error handling using OCaml's strong type system.
+• Achieved full test coverage using Bisect and conducted extensive pair programming sessions 
+  to ensure code quality and collaborative development practices.
+
 Plant Operations Smartphone Tracker | Cornell AguaClara | Jan 2024-May 2025
 • Designed and developed POST, an Android application designed with Flutter, Postman, and 
   Figma that streamlines how water plant operators in Central America and India monitor, 
