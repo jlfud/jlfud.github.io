@@ -81,105 +81,17 @@ window.addEventListener('scroll', function() {
 document.getElementById('download-resume').addEventListener('click', function(e) {
     e.preventDefault();
     
-    // Create a simple text-based resume content
-    const resumeContent = `
-JASON L. FU
-Computer Science Student & Software Engineer
-San Jose, CA | 503-547-5876 | jlf344@cornell.edu
-GitHub: github.com/jlfud | LinkedIn: linkedin.com/in/jlfud
-
-EDUCATION
-Cornell University, College of Engineering | Ithaca, NY
-Bachelor of Science in Computer Science, Minor in Artificial Intelligence
-Aug 2023 - May 2027 | GPA: 3.93
-
-Relevant Coursework: Machine Learning, Computer Networks, Object-Oriented Programming 
-and Data Structures, Data Structures and Functional Programming, Analysis of Algorithms, 
-Computer System Organization and Programming
-
-EXPERIENCE
-Software Engineering Internship | HYC USA | Fremont, CA | Jun 2025 - Aug 2025
-• Developed a full-stack enterprise warehouse management system using modern web 
-  technologies (FastAPI, SQLite, JavaScript) with real-time data synchronization and 
-  comprehensive user authentication.
-• Implemented RESTful API architecture with JWT security, role-based access control, 
-  database migrations (Alembic), and automated testing using industry-standard frameworks.
-• Built responsive web application with advanced search functionality, multi-language 
-  support, automated deployment pipeline, and production-ready infrastructure management.
-
-Software Engineering Internship | HYC USA | Fremont, CA | Jun 2024 - Aug 2024
-• Integrated Meta Llama 3.1 language models into in-circuit testing automation using 
-  Python GUI, PyTorch, and Transformers, enabling speech recognition and text-to-speech 
-  capabilities for streamlined workflows.
-• Improved testing efficiency for Apple, Tesla, and Meta circuits by optimizing workflows, 
-  reducing testing time by 15%, and leveraging PyQt5 for user interface design.
-
-PROJECTS
-Structured Textual Data Ingestion Pipeline | Cornell AguaClara | Feb 2025-Present
-• Developed an AWS-powered pipeline (Bedrock, S3, Lambda, API Gateway, OpenSearch, Cognito) 
-  to process and retrieve structured textual data from AguaClara's research repositories.
-• Built RESTful APIs and Lambda functions to process data, enabling retrieval-augmented 
-  generation (RAG) for enhanced LLM responses.
-• Automated infrastructure with AWS CDK, and implemented batch processing with SQS and Step Functions.
-• Secured authentication with Cognito and designed a frontend file upload interface with robust error handling.
-• Established CI/CD pipelines with AWS SAM for automated testing and deployment.
-
-API Reliability Dashboard | Personal Project | 2024-2025
-• Developed a comprehensive full-stack monitoring solution using Node.js, React, and Express 
-  that tracks API uptime, latency, and performance metrics with real-time visualization.
-• Implemented automatic URL polling every 60 seconds, interactive dashboards with Recharts, 
-  and Docker containerization for easy deployment across different environments.
-• Built RESTful API with SQLite database, featuring URL management, metrics collection, 
-  and responsive design supporting desktop, tablet, and mobile devices.
-
-EduConnect.AI | Hackathons at Cornell University | Feb 2025-May 2025
-• Developed a full-stack web application that uses artificial intelligence to match students 
-  in need with nonprofit organizations. Built the frontend using React and Streamlit (Python) 
-  for seamless AI-driven matchmaking.
-• Designed a matching algorithm leveraging OpenAI API for prompt classification and SerpAPI 
-  for retrieval-augmented generation (RAG) to enhance nonprofit search and recommendation.
-
-Camlmon Showdown | Cornell University CS 3110 Final Project | Fall 2024
-• Developed a Pokemon Showdown-inspired battle simulator in OCaml, demonstrating mastery of 
-  functional programming paradigms including pattern matching, higher-order functions, and 
-  immutable data structures for game state management.
-• Implemented modular architecture with separate type, item, and Camlmon modules, utilizing 
-  CSV data processing and ANSITerminal for enhanced terminal UI with health bars and styling.
-• Designed comprehensive battle system with type effectiveness calculations, item management, 
-  multiplayer functionality, and robust error handling using OCaml's strong type system.
-• Achieved full test coverage using Bisect and conducted extensive pair programming sessions 
-  to ensure code quality and collaborative development practices.
-
-Plant Operations Smartphone Tracker | Cornell AguaClara | Jan 2024-May 2025
-• Designed and developed POST, an Android application designed with Flutter, Postman, and 
-  Figma that streamlines how water plant operators in Central America and India monitor, 
-  record, and analyze water filtration data. Improved operational efficiency for water 
-  treatment plants serving over 101,000 people.
-• Developed the frontend using Kotlin, XML, and Jetpack frameworks, designing responsive 
-  UI components and integrating modern Android architecture components for a seamless user experience.
-• Implemented an offline-first backend architecture using AWS (Amplify, Cognito, AppSync, 
-  DataStore, DynamoDB) to manage cloud infrastructure, authentication, GraphQL communication, 
-  and offline data synchronization.
-
-TECHNICAL SKILLS
-Languages: Python, Java, C, C++, JavaScript, SQL, Kotlin, OCaml, HTML/CSS
-Frameworks/Libraries: React, Express, FastAPI, Flask, Pandas/NumPy, scikit-learn, PyTorch, TensorFlow
-Tools: Git, Docker, AWS (Lambda, S3, CloudFormation, CDK), GitHub Actions (CI/CD), pytest, SQLite
-    `;
-    
-    // Create and download the resume as a text file
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = window.URL.createObjectURL(blob);
+    // Create a link to download the PDF file
     const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Jason_Fu_Resume.txt';
+    a.href = 'assets/Jason_Fu_Resume.pdf';
+    a.download = 'Jason_Fu_Resume.pdf';
+    a.target = '_blank';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
     
     // Show a notification
-    showNotification('Resume downloaded successfully!');
+    showNotification('Resume PDF downloaded successfully!');
 });
 
 // Notification System
