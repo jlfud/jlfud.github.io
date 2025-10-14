@@ -124,6 +124,14 @@ Structured Textual Data Ingestion Pipeline | Cornell AguaClara | Feb 2025-Presen
 • Secured authentication with Cognito and designed a frontend file upload interface with robust error handling.
 • Established CI/CD pipelines with AWS SAM for automated testing and deployment.
 
+API Reliability Dashboard | Personal Project | 2024-2025
+• Developed a comprehensive full-stack monitoring solution using Node.js, React, and Express 
+  that tracks API uptime, latency, and performance metrics with real-time visualization.
+• Implemented automatic URL polling every 60 seconds, interactive dashboards with Recharts, 
+  and Docker containerization for easy deployment across different environments.
+• Built RESTful API with SQLite database, featuring URL management, metrics collection, 
+  and responsive design supporting desktop, tablet, and mobile devices.
+
 EduConnect.AI | Hackathons at Cornell University | Feb 2025-May 2025
 • Developed a full-stack web application that uses artificial intelligence to match students 
   in need with nonprofit organizations. Built the frontend using React and Streamlit (Python) 
