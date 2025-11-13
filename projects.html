@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason L. Fu | Projects</title>
+    <meta name="description" content="Selected projects by Jason L. Fu ranging from AI pipelines to mobile apps.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">JLF</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link">experience</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link active">projects</a></li>
+                <li class="nav-item"><a href="stack.html" class="nav-link">stack</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="section-header">
+            <div class="terminal-prompt-small">
+                <span class="prompt-user">JLF</span>
+                <span class="prompt-symbol">></span>
+                <span class="prompt-command">projects</span>
+            </div>
+            <h1 class="section-title">Projects</h1>
+        </div>
+
+        <div class="projects-list">
+            <article class="project-item">
+                <div class="project-header">
+                    <h2 class="project-title">Structured Textual Data Ingestion Pipeline</h2>
+                    <span class="project-date">Cornell AguaClara &middot; Feb 2025 - Present</span>
+                </div>
+                <p class="project-description">
+                    An AWS-powered pipeline that processes and retrieves structured research data for AguaClara. Combined
+                    Bedrock, S3, Lambda, OpenSearch, and Cognito to enable retrieval-augmented generation, built REST APIs
+                    for search, and automated infrastructure with CDK. The system uploads, indexes, and serves clean data
+                    to downstream AI tools.
+                </p>
+                <div class="project-tech">
+                    <span>AWS</span>
+                    <span>Bedrock</span>
+                    <span>Lambda</span>
+                    <span>OpenSearch</span>
+                    <span>CDK</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-header">
+                    <h2 class="project-title">API Reliability Dashboard</h2>
+                    <span class="project-date">Personal Project</span>
+                </div>
+                <p class="project-description">
+                    Full-stack monitoring platform that tracks API uptime, latency, and P95 performance in real time.
+                    Features automatic URL polling, a React dashboard with charts, and Docker Compose deployments.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/jlfud/API-reliability-dashboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <i class="fab fa-github"></i> github
+                    </a>
+                </div>
+                <div class="project-tech">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>React</span>
+                    <span>SQLite</span>
+                    <span>Docker</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-header">
+                    <h2 class="project-title">EduConnect.AI</h2>
+                    <span class="project-date">Hackathons at Cornell &middot; Feb 2025 - May 2025</span>
+                </div>
+                <p class="project-description">
+                    Built a matchmaking platform that pairs students with nonprofit volunteering opportunities. Used React
+                    and Streamlit for the interface, OpenAI for prompt classification, and SerpAPI for search. Delivered a
+                    working prototype that quickly surfaced relevant organizations.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/jlfud/ai-hackathon-educonnect" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <i class="fab fa-github"></i> github
+                    </a>
+                </div>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Streamlit</span>
+                    <span>OpenAI API</span>
+                    <span>SerpAPI</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-header">
+                    <h2 class="project-title">Camlmon Showdown</h2>
+                    <span class="project-date">CS 3110 Final Project</span>
+                </div>
+                <p class="project-description">
+                    A Pokemon Showdown-inspired battle simulator built entirely in OCaml. Modeled types, moves, and item
+                    logic, created a terminal UI with ANSITerminal, and achieved full test coverage with Bisect. Supports
+                    multiplayer battles, party management, and item usage.
+                </p>
+                <div class="project-links">
+                    <a href="https://youtu.be/uoYsW--kAMQ" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <i class="fab fa-youtube"></i> demo
+                    </a>
+                </div>
+                <div class="project-tech">
+                    <span>OCaml</span>
+                    <span>Functional Programming</span>
+                    <span>ANSITerminal</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-header">
+                    <h2 class="project-title">Plant Operations Smartphone Tracker (POST)</h2>
+                    <span class="project-date">Cornell AguaClara &middot; Jan 2024 - May 2025</span>
+                </div>
+                <p class="project-description">
+                    Mobile app that helps operators in Central America and India record and analyze water filtration data.
+                    Built with Flutter, Amplify, and DynamoDB, the app syncs offline data, supports multilingual workflows,
+                    and serves communities totaling over 101,000 people.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/AguaClara/aguadatos-amplify-android" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <i class="fab fa-github"></i> github
+                    </a>
+                </div>
+                <div class="project-tech">
+                    <span>Flutter</span>
+                    <span>Kotlin</span>
+                    <span>AWS Amplify</span>
+                    <span>DynamoDB</span>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Jason L. Fu</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

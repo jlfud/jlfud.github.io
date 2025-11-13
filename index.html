@@ -3,369 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason L. Fu - Computer Science Student & Software Engineer</title>
+    <title>Jason L. Fu | About</title>
+    <meta name="description" content="About Jason L. Fu, Cornell CS student focused on AI and full-stack development.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="nav">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Jason L. Fu</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <a href="index.html" class="nav-logo">JLF</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">about</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link">experience</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">projects</a></li>
+                <li class="nav-item"><a href="stack.html" class="nav-link">stack</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-container">
-            <div class="home-content">
-                <div class="home-profile">
-                    <div class="profile-image">
-                        <img src="assets/images/headshot.jpg" alt="Jason L. Fu" class="profile-photo">
-                    </div>
-                    <div class="profile-text">
-                        <h1 class="home-title">Jason L. Fu</h1>
-                        <h2 class="home-subtitle">Computer Science Student at Cornell University</h2>
-                        <p class="home-description">AI & Software Engineering Focus | Passionate about building scalable systems and intelligent applications</p>
-                    </div>
-                </div>
-                <p class="home-bio">I'm a Computer Science student at Cornell University with a minor in Artificial Intelligence. I have experience in full-stack development and machine learning. I've worked on enterprise warehouse management systems, AI-powered testing automation, data ingestion pipelines, and Android applications serving over 101,000 people.</p>
-                <div class="home-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
+    <main class="hero">
+        <div class="terminal-prompt">
+            <span class="prompt-user">JLF</span>
+            <span class="prompt-symbol">></span>
+            <span class="prompt-command">whoami</span>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Experience & Projects</h2>
-            
-            <div class="subsection">
-                <h3 class="subsection-title">Professional Experience</h3>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Software Engineering Intern</h4>
-                            <span class="project-date">Jun 2025 - Aug 2025</span>
-                        </div>
-                        <div class="project-company">HYC USA | Fremont, CA</div>
-                        <p class="project-description">Developed a full-stack enterprise warehouse management system using FastAPI, SQLite, and JavaScript with real-time data synchronization and JWT security. Implemented RESTful APIs with role-based access control and automated testing frameworks.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">JWT</span>
-                            <span class="tech-tag">Alembic</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Software Engineering Intern</h4>
-                            <span class="project-date">Jun 2024 - Aug 2024</span>
-                        </div>
-                        <div class="project-company">HYC USA | Fremont, CA</div>
-                        <p class="project-description">Integrated Meta Llama 3.1 language models into in-circuit testing automation using Python GUI, PyTorch, and Transformers. Improved testing efficiency for Apple, Tesla, and Meta circuits by 15%.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">PyQt5</span>
-                            <span class="tech-tag">Transformers</span>
-                            <span class="tech-tag">Meta Llama</span>
-                        </div>
-                    </div>
+        <h1 class="hero-title">Jason L. Fu</h1>
+        <p class="hero-subtitle">Fullstack developer & CS + AI student @ Cornell</p>
+        <div class="hero-content">
+            <p class="hero-intro">
+                I'm a software engineer passionate about building AI-powered systems and scalable infrastructure that make
+                real-world operations faster, smarter, and more accessible. At Cornell, I'm studying Computer Science with
+                a minor in Artificial Intelligence, where I've led and contributed to projects spanning distributed
+                systems, machine learning, and cloud-native development.
+            </p>
+            <p class="hero-text">
+                I've worked across full-stack development, AI systems integration, and hardware-software automation during
+                my internships at HYC USA, where I built production-grade applications used by 50+ warehouse operators and
+                integrated Meta Llama 3.1 models into in-circuit testing tools for teams at Apple, Tesla, and Meta.
+            </p>
+            <p class="hero-text">
+                I also design open-source technology for global impact through Cornell AguaClara, building an AWS-powered
+                data ingestion pipeline that makes 40GB+ of research searchable for scientists, and developing POST, an
+                Android app improving water-treatment operations for communities serving 100,000+ people.
+            </p>
+            <p class="hero-text">
+                Moreover, I've prototyped AI-driven matching systems, shipped mobile and web apps, and contributed to
+                open-source projects with teams of 50+ developers.
+            </p>
+            <p class="hero-text">
+                Beyond my technical work, I love playing pickleball and working out at the gym.
+            </p>
+            <div class="about-actions">
+                <div class="hero-links">
+                    <a href="mailto:jlf344@cornell.edu" class="hero-link"><i class="fas fa-envelope"></i> jlf344@cornell.edu</a>
+                    <a href="https://github.com/jlfud" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-github"></i> github.com/jlfud</a>
+                    <a href="https://linkedin.com/in/jlfud" target="_blank" rel="noopener noreferrer" class="hero-link"><i class="fab fa-linkedin"></i> linkedin.com/in/jlfud</a>
                 </div>
-            </div>
-
-            <div class="subsection">
-                <h3 class="subsection-title">Featured Projects</h3>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Structured Textual Data Ingestion Pipeline</h4>
-                            <span class="project-date">Feb 2025 - Present</span>
-                        </div>
-                        <div class="project-company">Cornell AguaClara | Ithaca, NY</div>
-                        <p class="project-description">Developed an AWS-powered pipeline using Bedrock, S3, Lambda, and OpenSearch to process and retrieve structured textual data. Built RESTful APIs enabling retrieval-augmented generation (RAG) for enhanced LLM responses with automated infrastructure using AWS CDK.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">Lambda</span>
-                            <span class="tech-tag">S3</span>
-                            <span class="tech-tag">OpenSearch</span>
-                            <span class="tech-tag">CDK</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>API Reliability Dashboard</h4>
-                            <span class="project-date">Full-Stack Project</span>
-                        </div>
-                        <div class="project-company">Personal Project | Remote</div>
-                        <p class="project-description">A comprehensive monitoring solution that tracks API uptime, latency, and performance metrics with real-time visualization. Features automatic URL polling, interactive dashboards, and Docker containerization for easy deployment across environments.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/jlfud/API-reliability-dashboard" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>EduConnect.AI</h4>
-                            <span class="project-date">Feb 2025 - May 2025</span>
-                        </div>
-                        <div class="project-company">Hackathons at Cornell University | New York, NY</div>
-                        <p class="project-description">Full-stack web application using AI to match students with nonprofit organizations. Built with React and Streamlit, featuring a matching algorithm leveraging OpenAI API and SerpAPI for enhanced search and recommendations.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/jlfud/ai-hackathon-educonnect" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">OpenAI API</span>
-                            <span class="tech-tag">SerpAPI</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Camlmon Showdown</h4>
-                            <span class="project-date">CS 3110 Final Project</span>
-                        </div>
-                        <div class="project-company">Cornell University | Ithaca, NY</div>
-                        <p class="project-description">A Pokemon Showdown-inspired battle simulator built entirely in OCaml, demonstrating advanced functional programming concepts including pattern matching, higher-order functions, and immutable data structures. Features a complete battle system with type effectiveness, item management, and multiplayer functionality.</p>
-                        <div class="project-links">
-                            <a href="https://youtu.be/uoYsW--kAMQ" target="_blank" class="project-link">
-                                <i class="fab fa-youtube"></i> Demo Video
-                            </a>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">OCaml</span>
-                            <span class="tech-tag">Functional Programming</span>
-                            <span class="tech-tag">ANSITerminal</span>
-                            <span class="tech-tag">CSV Processing</span>
-                            <span class="tech-tag">Pattern Matching</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Plant Operations Smartphone Tracker (POST)</h4>
-                            <span class="project-date">Jan 2024 - May 2025</span>
-                        </div>
-                        <div class="project-company">Cornell AguaClara | Ithaca, NY</div>
-                        <p class="project-description">Android application built with Flutter that streamlines water plant monitoring for operators in Central America and India. Improved operational efficiency for treatment plants serving over 101,000 people with offline-first architecture using AWS.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/AguaClara/aguadatos-amplify-android" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">AWS Amplify</span>
-                            <span class="tech-tag">DynamoDB</span>
-                            <span class="tech-tag">GraphQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education & Coursework</h2>
-            
-            <div class="education-content">
-                <div class="education-header">
-                    <div class="education-main">
-                        <h3>Cornell University, College of Engineering</h3>
-                        <div class="education-details">
-                            <span class="degree">Bachelor of Science in Computer Science</span>
-                            <span class="minor">Minor in Artificial Intelligence</span>
-                            <span class="gpa">GPA: 3.93</span>
-                            <span class="dates">Aug 2023 - May 2027</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coursework-section">
-                    <h3>Relevant Coursework</h3>
-                    <div class="courses-grid">
-                        <div class="course-category">
-                            <h4>Core Systems & Programming</h4>
-                            <div class="course-list">
-                                <div class="course-item">
-                                    <span class="course-name">Object-Oriented Programming and Data Structures</span>
-                                    <span class="course-code">CS 2110</span>
-                                </div>
-                                <div class="course-item">
-                                    <span class="course-name">Data Structures and Functional Programming</span>
-                                    <span class="course-code">CS 3110</span>
-                                </div>
-                                <div class="course-item">
-                                    <span class="course-name">Computer System Organization and Programming</span>
-                                    <span class="course-code">CS 3410</span>
-                                </div>
-                                <div class="course-item">
-                                    <span class="course-name">Systems Programming</span>
-                                    <span class="course-code">CS 4414</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="course-category">
-                            <h4>Algorithms & Theory</h4>
-                            <div class="course-list">
-                                <div class="course-item">
-                                    <span class="course-name">Discrete Structures</span>
-                                    <span class="course-code">CS 2800</span>
-                                </div>
-                                <div class="course-item">
-                                    <span class="course-name">Introduction to Analysis of Algorithms</span>
-                                    <span class="course-code">CS 4820</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="course-category">
-                            <h4>Artificial Intelligence & ML</h4>
-                            <div class="course-list">
-                                <div class="course-item">
-                                    <span class="course-name">Introduction to Machine Learning</span>
-                                    <span class="course-code">CS 3780</span>
-                                </div>
-                                <div class="course-item">
-                                    <span class="course-name">AI Reasoning and Decision Making</span>
-                                    <span class="course-code">CS 3700</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="course-category">
-                            <h4>Networks & Distributed Systems</h4>
-                            <div class="course-list">
-                                <div class="course-item">
-                                    <span class="course-name">Introduction to Computer Networks</span>
-                                    <span class="course-code">CS 4450</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-content">
-                <div class="resume-preview">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Languages</h4>
-                            <p>Python, Java, C, C++, JavaScript, TypeScript, SQL, Kotlin, OCaml, HTML/CSS</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Frameworks & Libraries</h4>
-                            <p>ReactJS, Node.js, Express, FastAPI, Flask, MongoDB, GraphQL, Pandas/NumPy, scikit-learn, PyTorch, TensorFlow, Hugging Face Transformers</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Tools & Technologies</h4>
-                            <p>Git, Docker, Postman, GitHub Actions (CI/CD), pytest, JUnit, Alembic, OpenAI API, RESTful APIs, AWS (Lambda, S3, DynamoDB, Amplify, CloudFormation/CDK, Cognito, Step Functions, SQS), SQLite</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-actions">
-                    <p class="resume-note">Complete resume with detailed experience, education, and projects</p>
-                    <a href="#" class="btn btn-primary" id="download-resume">
-                        <i class="fas fa-download"></i> Download Resume PDF
+                <div class="resume-download">
+                    <a href="assets/Jason_Fu_Resume.pdf" download="Jason_Fu_Resume.pdf" class="btn-download">
+                        <i class="fas fa-download"></i>
+                        Download Resume PDF
                     </a>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-description">I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to connect!</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:jlf344@cornell.edu">jlf344@cornell.edu</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>San Jose, CA</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:503-547-5876">503-547-5876</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/jlfud" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com/in/jlfud" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Jason L. Fu. All rights reserved.</p>
+            <p class="footer-text">&copy; 2025 Jason L. Fu</p>
         </div>
     </footer>
 

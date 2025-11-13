@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason L. Fu | Experience</title>
+    <meta name="description" content="Professional experience of Jason L. Fu, including internships at HYC USA.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">JLF</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="experience.html" class="nav-link active">experience</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">projects</a></li>
+                <li class="nav-item"><a href="stack.html" class="nav-link">stack</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="section-header">
+            <div class="terminal-prompt-small">
+                <span class="prompt-user">JLF</span>
+                <span class="prompt-symbol">></span>
+                <span class="prompt-command">experience</span>
+            </div>
+            <h1 class="section-title">Experience</h1>
+        </div>
+
+        <div class="projects-list">
+            <article class="project-item">
+                <div class="project-header">
+                    <h2 class="project-title">Software Engineering Intern</h2>
+                    <span class="project-date">HYC USA &middot; Fremont, CA &middot; Jun 2025 - Aug 2025</span>
+                </div>
+                <p class="project-description">
+                    Built a warehouse management system used to orchestrate inventory, fulfillment, and reporting workflows.
+                    Designed REST APIs with JWT authentication and role-based access control, led database migrations with
+                    Alembic, and wired automated tests to keep deployments predictable. Owned frontend improvements that
+                    surfaced real-time data and made the system easier to operate day to day.
+                </p>
+                <div class="project-tech">
+                    <span>FastAPI</span>
+                    <span>SQLite</span>
+                    <span>JavaScript</span>
+                    <span>JWT</span>
+                    <span>pytest</span>
+                </div>
+            </article>
+
+            <article class="project-item">
+                <div class="project-header">
+                    <h2 class="project-title">Software Engineering Intern</h2>
+                    <span class="project-date">HYC USA &middot; Fremont, CA &middot; Jun 2024 - Aug 2024</span>
+                </div>
+                <p class="project-description">
+                    Integrated Meta Llama 3.1 into a production test platform used by Apple, Tesla, and Meta hardware teams.
+                    Built a PyQt5 desktop interface, connected speech-to-text and text-to-speech flows, and trimmed test time
+                    by 15% by automating repetitive checks. Used Python, PyTorch, and Transformers to keep the system fast
+                    and reliable, and shipped incremental updates throughout the internship.
+                </p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>PyQt5</span>
+                    <span>Transformers</span>
+                    <span>Meta Llama 3.1</span>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Jason L. Fu</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
