@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="nav">
         <div class="nav-container">
@@ -45,18 +49,24 @@
                     <h2 class="project-title">Software Engineering Intern</h2>
                     <span class="project-date">HYC USA &middot; Fremont, CA &middot; Jun 2025 - Aug 2025</span>
                 </div>
-                <p class="project-description">
-                    Built a warehouse management system used to orchestrate inventory, fulfillment, and reporting workflows.
-                    Designed REST APIs with JWT authentication and role-based access control, led database migrations with
-                    Alembic, and wired automated tests to keep deployments predictable. Owned frontend improvements that
-                    surfaced real-time data and made the system easier to operate day to day.
-                </p>
+                <ul class="project-description" style="list-style-type: disc; padding-left: 20px; margin-bottom: 1rem;">
+                    <li>Engineered the backend architecture for a warehouse management system using FastAPI and SQLite,
+                        implementing concurrent programming paradigms to prevent race conditions and ensure highly
+                        available, real-time data synchronization for 50+ enterprise users.</li>
+                    <li>Designed secure, high-throughput RESTful APIs with JWT authentication and RBAC, and managed
+                        zero-downtime schema evolution via Alembic database migrations to ensure strict system
+                        reliability across automated CI/CD deployments.</li>
+                    <li>Architected optimized backend search algorithms and streamlined CI/CD pipelines, reducing
+                        database retrieval latency by 30% to support seamless, high-volume operations for global teams.
+                    </li>
+                </ul>
                 <div class="project-tech">
                     <span>FastAPI</span>
                     <span>SQLite</span>
-                    <span>JavaScript</span>
                     <span>JWT</span>
-                    <span>pytest</span>
+                    <span>RBAC</span>
+                    <span>Alembic</span>
+                    <span>CI/CD</span>
                 </div>
             </article>
 
@@ -65,12 +75,13 @@
                     <h2 class="project-title">Software Engineering Intern</h2>
                     <span class="project-date">HYC USA &middot; Fremont, CA &middot; Jun 2024 - Aug 2024</span>
                 </div>
-                <p class="project-description">
-                    Integrated Meta Llama 3.1 into a production test platform used by Apple, Tesla, and Meta hardware teams.
-                    Built a PyQt5 desktop interface, connected speech-to-text and text-to-speech flows, and trimmed test time
-                    by 15% by automating repetitive checks. Used Python, PyTorch, and Transformers to keep the system fast
-                    and reliable, and shipped incremental updates throughout the internship.
-                </p>
+                <ul class="project-description" style="list-style-type: disc; padding-left: 20px; margin-bottom: 1rem;">
+                    <li>Integrated Meta Llama 3.1 language models (LLMs) in in-circuit testing automation using Python
+                        GUI, PyTorch, and Transformers with speech recognition and text-to-speech capabilities for
+                        streamlined workflows.</li>
+                    <li>Partnered with hardware engineers to design a PyQt5-based testing GUI for Apple, Tesla, and Meta
+                        circuits, reducing test cycle time by 15% through optimizing data handling and automation.</li>
+                </ul>
                 <div class="project-tech">
                     <span>Python</span>
                     <span>PyTorch</span>
@@ -84,10 +95,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">&copy; 2025 Jason L. Fu</p>
+            <p class="footer-text">&copy; 2026 Jason L. Fu</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
